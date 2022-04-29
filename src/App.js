@@ -2,23 +2,17 @@ import React, { useState } from 'react';
 import 'react-calendar/dist/Calendar.css';
 import Calendar from 'react-calendar';
 import "./App.css"
-import { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import { Row, Col, Container, FormControl, InputGroup, ButtonGroup, ListGroup, Alert } from 'react-bootstrap';
 import moment from "moment"
 import { AiFillDelete } from "react-icons/ai"
 import nextId from "react-id-generator";
 
-
-
-
-
 function App() {
   const [values, setValues] = useState(new Date());
   const [input, setInput] = useState("")
   const [notes, setNotes] = useState([]);
-  const [filters, setFilters] = useState([])
-  const [removeTask, setRemoveTask] = useState(filters)
+  const [filters, setFilters] = useState([]) 
 
   //Id Generator
   const taskId = nextId()
