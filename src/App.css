@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.react-calendar { 
+    width: 600px;   
+    max-width: 100%;
+    background-color: #fff;
+    color: #222;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.125em;
+   }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+   .react-calendar button{
+       height: 60px;
+       
+   }
+   .react-calendar__tile--active{
+       color: rgb(248, 70, 16);
+   }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+   #delete-button{
+       float: right;
+       cursor: pointer;
+       
+   }
+   #delete-button:hover{
+       color: rgb(255, 8, 8);
+   }
+   #input{
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+   }
+   #task{
+       border:1px solid rgb(189, 189, 189);
+       margin-top:25px ;
+       height: 350px;
+       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+       
+   }
 
-.App-link {
-  color: #61dafb;
-}
+   #task h6{
+       border-bottom: 1px solid rgb(189, 189, 189);
+       font-size: 12px;
+   }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+   #task-list{
+    overflow-y: scroll;
+   }
+   #task-total{
+    
+       padding: 5px;
+       font-size: 10px;
+       color: rgb(22, 44, 119);
+       border-top: 1px solid rgb(189, 189, 189);
+   }
+
+  
+   .react-calendar__month-view__weekdays__weekday{
+    color: black ;
+    border-bottom: #222 solid 1px;
+    text-decoration: none;
+        
+
+   }
