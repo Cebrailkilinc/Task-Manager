@@ -116,10 +116,6 @@ function App() {
         </Row>
         <Row>
           <Col>
-
-
-
-
           </Col>
         </Row>
       </Container>
